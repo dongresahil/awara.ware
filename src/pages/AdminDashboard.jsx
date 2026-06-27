@@ -12,7 +12,7 @@ function AdminDashboard() {
     useEffect(() => {
 
         axios
-            .get("http://127.0.0.1:5000/admin/orders")
+            .get("https://awara-ware.onrender.com")
             .then((res) => {
                 setDashboard(res.data);
             })

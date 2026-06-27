@@ -11,7 +11,7 @@ function MyOrders() {
 
         if (user) {
             axios
-                .get(`http://127.0.0.1:5000/my-orders/${user.email}`)
+                .get(`https://awara-ware.onrender.com/${user.email}`)
                 .then((res) => {
                     setOrders(res.data);
                 })

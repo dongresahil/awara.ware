@@ -14,7 +14,7 @@ const handleLogin = async (e) => {
 
     try {
     const response = await axios.post(
-        "http://127.0.0.1:5000/login",
+        "https://awara-ware.onrender.com",
         {
             email,
             password,

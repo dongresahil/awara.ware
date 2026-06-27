@@ -25,7 +25,7 @@ console.log({
 });
     try {
 const response = await axios.post(
-    "http://127.0.0.1:5000/place-order",
+    "https://awara-ware.onrender.com",
     {
         user_email: user.email,
         total_amount: total
