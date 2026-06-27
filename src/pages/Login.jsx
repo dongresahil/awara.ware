@@ -19,7 +19,7 @@ const handleLogin = async (e) => {
             email,
             password,
         }
-    );
+    
 
     login(email);
 
