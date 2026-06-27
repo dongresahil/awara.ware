@@ -1,11 +1,13 @@
+from db import db, cursor
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from db import db, cursor
 
 app = Flask(__name__)
-CORS(app)
 
-
+CORS(app, origins=[
+    "https://www.awaraware.in",
+    "https://awaraware.in"
+])
 # ================= REGISTER =================
 
 @app.route("/register", methods=["POST"])
