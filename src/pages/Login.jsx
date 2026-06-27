@@ -13,8 +13,8 @@ const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-    const response = await axios.post(
-        "https://awara-ware.onrender.com",
+    const response = await 
+    axios.post("https://awara-ware.onrender.com/login"),
         {
             email,
             password,

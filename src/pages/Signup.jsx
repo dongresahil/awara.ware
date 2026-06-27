@@ -14,7 +14,7 @@ function Signup() {
 
         try {
             const response = await axios.post(
-                "https://awara-ware.onrender.com",
+            fetch("https://awara-ware.onrender.com/signup"),
                 {
                     name,
                     email,
