@@ -22,14 +22,13 @@ const handleLogin = async (e) => {
         );
 
         login(email);
+        alert(response.data.message);
         navigate("/");
 
     } catch (error) {
-        console.log(error);
         alert("Invalid email or password");
     }
 };
-}
 
     return (
         <div
