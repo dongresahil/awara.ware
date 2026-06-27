@@ -12,15 +12,14 @@ function Signup() {
     const handleSignup = async (e) => {
         e.preventDefault();
 
-        try {
-            const response = await axios.post(
-            fetch("https://awara-ware.onrender.com/signup"),
-                {
-                    name,
-                    email,
-                    password,
-                }
-            );
+    const response = await axios.post(
+"https://awara-ware.onrender.com/signup",
+{
+    name,
+    email,
+    password,
+}
+);
 
             alert(response.data.message);
             navigate("/login");
