@@ -9,29 +9,29 @@ function Signup() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSignup = async (e) => {
-        e.preventDefault();
+const handleSignup = async (e) => {
+    e.preventDefault();
 
-    const response = await axios.post(
-"https://awara-ware.onrender.com/signup",
-{
-    name,
-    email,
-    password,
-}
-);
+    try {
+        const response = await axios.post(
+            "https://awara-ware.onrender.com/register",
+            {
+                name,
+                email,
+                password,
+            }
+        );
 
-            alert(response.data.message);
-            navigate("/login");
+        alert(response.data.message);
+        navigate("/login");
 
-        } catch (error) {
-            alert(
-                error.response?.data?.message ||
-                "Registration Failed"
-            );
-        }
-    };
-
+    } catch (error) {
+        alert(
+            error.response?.data?.message ||
+            "Registration Failed"
+        );
+    }
+};
     return (
         <div
             style={{

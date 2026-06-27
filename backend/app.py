@@ -100,7 +100,7 @@ def place_order():
     
     
 #---------------------------------ADMIN DASHBOARD-----------------
-@app.route("/https://awara-ware.onrender.com/admin/orders", methods=["GET"])
+@app.route("/admin/orders", methods=["GET"])
 def admin_orders():
 
     cursor.execute("""
