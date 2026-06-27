@@ -1,0 +1,5 @@
+backend/
+database/
+ai_models/
+requirements.txt
+*.py
