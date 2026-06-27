@@ -13,23 +13,24 @@ const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-    const response = await 
-    axios.post("https://awara-ware.onrender.com/login"),
-        {
-            email,
-            password,
-        }
-    
+        const response = await axios.post(
+            "https://awara-ware.onrender.com/login",
+            {
+                email,
+                password,
+            }
+        );
 
-    login(email);
+        login(email);
+        navigate("/");
 
-    
-    navigate("/");
-
-} catch (error) {
-    alert("Invalid email or password");
+    } catch (error) {
+        console.log(error);
+        alert("Invalid email or password");
+    }
+};
 }
-}
+
     return (
         <div
             style={{
